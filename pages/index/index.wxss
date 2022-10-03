@@ -1,0 +1,70 @@
+.page {
+  /* padding: 32rpx; */
+}
+
+.header {
+
+}
+.title {
+  width: 100%;
+  text-align: center;
+  font-size: 48rpx;
+  margin: 32rpx 0;
+}
+
+.center {
+  margin: 32rpx;
+}
+
+.form-item {
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.button {
+  width: 100%;
+  margin: 32rpx 0;
+  z-index: 8;
+}
+
+.result {
+  padding: 32rpx;
+}
+
+.echart {
+  height: 100vw;
+  margin-top: -120rpx;
+}
+
+.flex-box {
+  display: flex;
+  margin: 32rpx 0;
+  font-size: 36rpx;
+}
+
+.nongli, .res-title {
+  font-weight: 500;
+  font-size: 36rpx;
+}
+
+.flex-content {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 36rpx;
+}
+.flex-content view {
+  text-align: center;
+  width: 20%;
+}
+.wx {
+  flex-wrap: nowrap;
+}
+.wx view {
+  color: #fff;
+  margin-right: 3rpx;
+}
+
+

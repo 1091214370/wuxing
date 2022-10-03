@@ -1,0 +1,46 @@
+<view class="page">
+  <view class="header">
+    <view class="title">生辰八字&五行</view>
+  </view>
+  <view class="center">
+    <view>
+      <picker mode="date" value="{{valueDate}}" bindchange="handleDate">
+        <view class="form-item">选择公历日期：{{valueDate}}</view>
+      </picker>
+      <picker bindchange="handleHour" value="{{valueH}}" range="{{dataH}}">
+        <view class="form-item">
+          时间：{{valueH}}点
+        </view>
+      </picker>
+    </view>
+  </view>
+  <button type="primary" class="button" bind:tap="handleScle">计算八字</button>
+  <view class="result">
+    <view class="nongli" wx:if="{{res.gzYear}}">
+    农历 {{res.gzYear}}{{res.Animal}}年 {{res.IMonthCn}} {{res.IDayCn}}  {{res.ncWeek}}
+    </view>
+    <view class="flex-box" wx:if="{{res.gzYear}}">
+    <view class="res-title">八字：</view>
+    <view class="flex-content">
+      <view style="background-color: {{allColors[4]}};">{{res.gzYear}}</view>
+      <view style="background-color: {{allColors[1]}};">{{res.gzMonth}}</view>
+      <view style="background-color: {{allColors[2]}};">{{res.gzDay}}</view>
+      <view style="background-color: {{allColors[3]}};">{{res.gzHour}}</view>
+    </view>
+    </view>
+    <view class="flex-box" wx:if="{{res.gzYear}}">
+    <view class="res-title">五行：</view>
+    <view class="flex-content wx">
+      <view style="background-color: rgb(179, 63, 56);">金：{{wuxing.jin}}</view>
+      <view style="background-color: rgb(53,70,83);">木：{{wuxing.mu}}</view>
+      <view style="background-color: rgb(110,158,165);">水：{{wuxing.shui}}</view>
+      <view style="background-color: rgb(201,134,108);">火：{{wuxing.huo}}</view>
+      <view style="background-color: rgb(155,195,174);">土：{{wuxing.tu}}</view>
+    </view>
+    </view>
+    <view class="echart">
+      <ec-canvas id="mychart" canvas-id="mychart" ec="{{ ec }}"></ec-canvas>
+    </view>
+  </view>
+
+</view>
