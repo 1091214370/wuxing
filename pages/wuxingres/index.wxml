@@ -30,7 +30,7 @@
     </view>
     <view>    
       <button wx:if="{{res.gzYear && flag}}" type="primary" open-type="share" class="button">分享给好友</button>
-      <button wx:if="{{res.gzYear}}" type="default" class="button" bind:tap="goback">{{ flag ? '重新计算' : '我也算算'}}</button>
+      <button wx:if="{{res.gzYear && !pengyouquan}}" type="default" class="button" bind:tap="goback">{{ flag ? '重新计算' : '我也算算'}}</button>
     </view>
 
   </view>

@@ -1,4 +1,3 @@
-import calendarFormatter from '../../utils/calendarFormatter';
 import {formatTime} from '../../utils/util';
 
 const DATAH = [];

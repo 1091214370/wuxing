@@ -1,5 +1,4 @@
 import calendarFormatter from '../../utils/calendarFormatter';
-import {formatTime} from '../../utils/util';
 import * as echarts from '../../components/ec-canvas/echarts';
 
 const G = ["甲","乙","丙","丁","戊","己","庚","辛","壬","癸"]
@@ -21,6 +20,7 @@ Page({
     valueDate: undefined,
     valueH: undefined,
     flag: false,
+    pengyouquan: false,
     res: {},
     dataH: DATAH,
     wuxing: {
@@ -48,8 +48,8 @@ Page({
   },
 
   onLoad(e) {
-    const { valueDate, valueH, flag } = e;
-    this.setData({valueDate, valueH, flag: flag === '1' });
+    const { valueDate, valueH, flag, pengyouquan } = e;
+    this.setData({valueDate, valueH, flag: flag === '1', pengyouquan: pengyouquan === '1' });
   },
 
   onShow(){
@@ -75,7 +75,7 @@ Page({
     const { valueDate, valueH } = this.data;
     return {
       title: '我的八字与五行分布',
-      query: `valueDate=${valueDate}&valueH=${valueH}`,
+      query: `valueDate=${valueDate}&valueH=${valueH}&pengyouquan=1`,
     }
   },
   
