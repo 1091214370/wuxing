@@ -3,7 +3,10 @@
     <view class="title">我的八字与五行分布</view>
   </view>
   <view class="result" >
-    <view class="nongli">
+    <view class="flex-box nongli">
+    日期: {{valueDate}}  时间：{{valueH || '--'}} 点
+    </view>
+    <view class="flex-box nongli">
     农历: {{res.gzYear}}{{res.Animal}}年 {{res.IMonthCn}} {{res.IDayCn}}  {{res.ncWeek}}
     </view>
     <view class="flex-box">
@@ -31,8 +34,11 @@
     <view>    
       <button wx:if="{{res.gzYear && flag}}" type="primary" open-type="share" class="button">分享给好友</button>
       <button wx:if="{{res.gzYear && !pengyouquan}}" type="default" class="button" bind:tap="goback">{{ flag ? '重新计算' : '我也算算'}}</button>
+      <button wx:else type="default" class="button" bind:tap="goback">我也算算</button>
     </view>
-
+  </view>
+  <view style="width: 100%;">
+  <ad unit-id="adunit-3c035a6664e81e3b" ad-type="video" ad-theme="white"></ad>
   </view>
 
 </view>
