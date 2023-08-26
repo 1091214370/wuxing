@@ -38,7 +38,7 @@
 }
 
 .echart {
-  height: 100vw;
+  height: 90vw;
   margin-top: -120rpx;
 }
 

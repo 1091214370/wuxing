@@ -1,16 +1,16 @@
 <view class="page">
   <view class="header">
-    <view class="title">我的八字与五行分布</view>
+    <view class="title">计算结果</view>
   </view>
   <view class="result" >
     <view class="flex-box nongli">
-    日期: {{valueDate}}  时间：{{valueH || '--'}} 点
+    公历日期: {{valueDate}} | 时间：{{valueH || '--'}} 点
     </view>
     <view class="flex-box nongli">
-    农历: {{res.gzYear}}{{res.Animal}}年 {{res.IMonthCn}} {{res.IDayCn}}  {{res.ncWeek}}
+    农历日期: {{res.gzYear}}{{res.Animal}}年 {{res.IMonthCn}} {{res.IDayCn}}
     </view>
     <view class="flex-box">
-    <view class="res-title">八字：</view>
+    <view class="res-title">四柱：</view>
     <view class="flex-content">
       <view style="background-color: {{allColors[4]}};">{{res.gzYear}}</view>
       <view style="background-color: {{allColors[1]}};">{{res.gzMonth}}</view>
