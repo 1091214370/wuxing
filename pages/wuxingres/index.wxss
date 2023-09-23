@@ -34,7 +34,7 @@
 }
 
 .result {
-  padding: 32rpx;
+  padding: 0 32rpx;
 }
 
 .echart {
@@ -72,4 +72,12 @@
   margin-right: 3rpx;
 }
 
-
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.btns button {
+  flex: 0 0 300rpx
+}

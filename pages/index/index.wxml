@@ -19,6 +19,6 @@
   </view>
   <button type="primary" class="button" bind:tap="handleScle">计算</button>
   <view style="position: absolute; bottom: 0;width: 100%;">
-    <ad unit-id="adunit-5d509a2d2926ec2a"></ad>
+    <ad unit-id="adunit-3c035a6664e81e3b" ad-type="video" ad-theme="white"></ad>
   </view>
 </view>

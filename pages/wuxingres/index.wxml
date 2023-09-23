@@ -31,14 +31,14 @@
     <view class="echart">
       <ec-canvas id="mychart" canvas-id="mychart" ec="{{ ec }}"></ec-canvas>
     </view>
-    <view>    
+    <view class="btns">    
       <button wx:if="{{res.gzYear && flag}}" type="primary" open-type="share" class="button">分享给好友</button>
       <button wx:if="{{res.gzYear && !pengyouquan}}" type="default" class="button" bind:tap="goback">{{ flag ? '重新计算' : '我也算算'}}</button>
       <button wx:else type="default" class="button" bind:tap="goback">我也算算</button>
     </view>
   </view>
   <view style="width: 100%;">
-  <ad unit-id="adunit-3c035a6664e81e3b" ad-type="video" ad-theme="white"></ad>
+    <ad unit-id="adunit-5d509a2d2926ec2a"></ad>
   </view>
 
 </view>
